@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div class="wrapper clearfix">
+    <div class="box box_px">px</div>
+    <div class="box box_em">em</div>
+    <div class="box box_rem">rem</div>
+</div>
+</body>
+<style>
+    :root{
+        font-size: 8px; /* 문서의 기본 값 */
+    }
+    body{
+        font-size: 12px;
+    }
+    
+    .box{
+        background-color: green;
+        margin-bottom: 2rem;
+    }
+
+    .box_px{
+        width: 160px;
+        height: 160px;
+    }
+    .box_em{
+        width: 5em; /* 12px * 5  조상태그body의 값의 배수 */
+        height: 5em;
+    }
+    .box_rem{
+        width: 20rem; /* 8px * 20 */
+        height: 20rem;
+    }
+</style>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            % : 부모가 만들어준 공간 안에서 비율 
+                p태그의 부모는 body이다. body가 만들어준 공간에서 100% 
+                body는 고유한 magin값을 가진다 (8px) 
+            vw : 브라우저 화면이 제공하는 모든화면에서의 너비 비율 값이다. 
+            vh: 브라우저 화면이 제공하는 모든화면에서의 높이 비율 값이다. 
+
+            브라우저의 너비가 916px이면
+            body의 margin값이 8px이므로 
+                100% : 900px 사용
+                100vw : 916px 사용 
+        */
+        :root{
+            font-size: 12px; 
+        }
+        h1{
+             font-size: 1.5rem; 
+        }
+        h2{
+            font-size: 1.2rem ; 
+        }
+        p {
+            font-size: 1rem; 
+            width: 100vw; 
+            height: 50vh; 
+            border: 2px solid red;
+            background-color: green;
+        }
+        span{
+            font-size: 1.5rem; 
+        }
+    </style>
+</head>
+<body>
+    <h1>css 기본문법</h1>
+    <h2>길위 단위</h2>
+        <p > 
+            <span>ipsum dolor</span> sit, amet consectetur adipisicing elit. Quos, minus maxime iure omnis minima aspernatur officiis, fugit sunt nostrum voluptatem eligendi excepturi ea. Debitis itaque eum enim vero ad? Culpa.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos, minus maxime iure omnis minima aspernatur officiis, fugit sunt nostrum voluptatem eligendi excepturi ea. Debitis itaque eum enim vero ad? Culpa.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos, minus maxime iure omnis minima aspernatur officiis, fugit sunt nostrum voluptatem eligendi excepturi ea. Debitis itaque eum enim vero ad? Culpa.
+        </p>
+</body>
+</html>
