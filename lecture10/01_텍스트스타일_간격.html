@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>letter-spacing, word-spacing, line-height</title>
+<style type="text/css">
+body{
+	font-family: '돋움',dotum,helvetica,sans-serif;
+	font-size: 12px;
+}
+h1{
+    letter-spacing: 2em; /* 자간 */
+    background-color: darkcyan;
+}
+.left{
+    word-spacing: 27px; /* 단어의 간격*/
+    line-height: 30px; /* 글자의가 차지하는 영역 높이 */
+    background-color: cornflowerblue;
+}
+.center{
+    line-height: 30px;
+    background-color: red;
+}
+
+h2{ /* 글자가 한줄일때만 가능 */
+    width: 300px; height: 60px;
+    border: 2px solid red;
+    text-align: center;
+    line-height: 60px; /* 높이와 동일하게 하면 수직 가운데 정렬된다.*/
+}
+</style>
+</head>
+<body>
+
+<div class="area">
+	<h1>글자의 정렬</h1>	
+    <h1>글자의 정렬</h2>
+
+	<h2>line height</h2>	
+
+	<p class="left">
+        <em>Lorem ipsum</em> dolor sit amet, consectetur adipisicing elit. Odit, laboriosam, ut, iste, adipisci a quo illo aliquid necessitatibus fuga tempora est animi quas ab quibusdam aut deleniti saepe odio sunt.</p>
+	<p class="center">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, laboriosam, ut, iste, adipisci a quo illo aliquid necessitatibus fuga tempora est animi quas ab quibusdam aut deleniti saepe odio sunt.</p>
+	<p class="right">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, laboriosam, ut, iste, adipisci a quo illo aliquid necessitatibus fuga tempora est animi quas ab quibusdam aut deleniti saepe odio sunt.</p>
+	<address>
+		&copy; all right reserved.<br/>
+		contact us.
+	</address>
+
+	<p class="etc">
+		<span>line element</span>
+		<span>line element</span>
+		<span>line element</span>
+	</p>
+</div>
+
+</body>
+</html>
