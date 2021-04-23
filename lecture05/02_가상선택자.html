@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상선택자</title>
+</head>
+<body>
+    <ul>
+        <li><a href="#" target="_blank" class="google">구글</a></li>
+        <li><a href="#" target="_blank" class="link_naver">네이버</a></li>
+        <li><a href="#" target="_self" class="link_daum">다음</a></li>
+    </ul>
+    <input type="text" placeholder="이름입력">
+</body>
+<style>
+    a:link{
+        text-decoration: none;
+        color: greenyellow;
+        outline: none; /* Tab 으로 focus할 때 outline 제거 */
+    }
+    a:hover{ /* 마우스 오버 이벤트 발생 시 */
+        color: red;
+        text-decoration: underline;
+    }
+    a:active{ /*클릭 이벤트 발생시*/
+        background-color: red;
+        color: white;
+    }
+    a:visited{ /* 방문한 웹페이지 */
+        color:violet;
+    }
+    a:focus{ /* Tab focus 시  */
+        background-color: blue;
+        color: white;
+    }
+    input:focus{
+        background-color: turquoise;
+        color: tomato;
+    }
+</style>
+</html>
