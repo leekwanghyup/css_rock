@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로고</title>
+    <style>
+        h1 a{ /* image-replacement 기법 : a태그내 이미지를 넣지않고 텍스트를 넣어 검색에 유리하게 한다.*/
+            background-image: url("img/logo.png");
+            width: 90px; height: 30px; /* a태그는 인라인 요소이므로 너비 높이를 적용할 수 없다.*/
+            display: inline-block; /*블록요소로 변경하여 너비와 높이를 적용한다.*/
+            text-indent: -9999em; /* 뎁스를 적용하여 이미지와 로고가 겹치는 현상을 해결한다.*/
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>
+        <a href="#">Logo</a>
+    </h1>
+</body>
+</html>
