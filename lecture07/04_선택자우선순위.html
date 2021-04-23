@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자우선순위</title>
+</head>
+<body>
+    <div class="area">
+        <p id="text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, aperiam, blanditiis maxime quisquam eum sunt voluptatibus voluptate earum nihil omnis quis rerum voluptates optio doloremque provident iure cumque quasi nam.
+        </p>   
+    
+       <p id="text2" style="color:blue"> 
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, aperiam, blanditiis maxime quisquam eum sunt voluptatibus voluptate earum nihil omnis quis rerum voluptates optio doloremque provident iure cumque quasi nam.
+        </p>
+    </div>
+</body>
+<style>
+    #text2{ /* 인라인 선택자보다 우선순위가 높다. 가장 우선순위가 높다. */
+        color: red !important;
+    }
+    /* 
+        우선순위 오름차순 
+        모든 선택자 < 태그선택자 < 클래스 선택자 < 아이디 선택자 < 인라인 선택자 < important선택자
+    */
+</style>
+</html>
