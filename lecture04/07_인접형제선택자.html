@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인접형제선택자</title>
+</head>
+<body>
+    <div>
+        <h1>css 기본문법</h1>
+        <h2>선택자1</h2>  <!--형제 선택자 [1]-->
+        <div>
+            <h2>선택자2</h2> 
+        </div>
+        <ul>
+            <li>
+                <h2>선택자3</h2> 
+            </li>
+        </ul>
+        <nav> <!--형제 선택자 [2]-->
+            <h2>선택자</h2> 
+        </nav>
+    </div>
+
+    <div>
+        <h2></h2>
+        <h2></h2>
+        <section></section> <!-- [3] section 이하 h2 모두 선택 -->
+        <h2>인접형제</h2>
+        <h2>인접형제</h2>
+        <h2>인접형제</h2>
+        <h2>인접형제</h2>
+    </div>
+    
+    
+</body>
+<style>
+    div > h1 + h2{ /* ...[1] */
+        color: red;
+    }
+    div > ul + nav{ /* ...[2] */
+        color: blue;
+    }
+
+    div > section ~ h2{ /* ...[3] */
+        background-color: khaki;
+    }
+</style>
+</html>
