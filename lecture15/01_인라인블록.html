@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>letter-spacing, word-spacing, line-height</title>
+<style type="text/css">
+body{
+	font-family: '돋움',dotum,helvetica,sans-serif;
+	font-size: 12px;
+}
+
+h1, span, h2{
+    background-color: blue; 
+    width: 300px;
+    color: #fff;
+}
+
+span{ /* 인라인 요소 : 너비와 높이를 적용할 수 없다. */
+    display: block; /* 너비높이 적용 가능 */
+}
+
+h2 { /* 블록 요소 */
+    display: inline; /* 인라인 요소로 변경 */
+}
+
+p {
+    text-align: center;
+}
+p a{
+    font-size: 16px;
+    background-color: blue;
+    text-decoration: none;
+    color: #fff;
+    width: 40px; height: 40px;
+    display: inline-block; /* 글자처럼 취급되면서 너비와높이가 적용된다.*/
+    line-height: 40px; /* 글자영역의 높이와 동일하게하면 수직 가운데정렬 된다.*/
+}
+
+.hidden{ /* hidden클래스 내의 모든 요소들을 숨긴다. */
+    display: none;
+}
+
+.hide{
+    visibility: hidden;
+}
+
+div i {
+    display: list-item; /* 리스트 형식의 블록 요소로 변경*/
+}
+
+.services{
+        background-color: chartreuse;
+        width: 800px; border: 2px solid red;
+        display: table; /* 자식 요소에 영향을 끼친다.*/
+    }
+.services > div{
+    display: table-cell;
+    border:1px solid blue;
+    width: 25%; /* 부모가 만들어준 너비의 25% 사용 */
+}
+
+</style>
+</head>
+<body>
+	<h1>heading1</h1>
+    <span>span tag</span>
+    <h2>hedaing2</h2>
+
+    <p>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+    </p>
+
+    <!-- display : hidden -->
+    <!-- visibility: hidden -->
+    <div class="hidden">
+        Hidden Area
+    </div>
+
+    <h2 class="hide">
+        Hiding Area
+    </h2>
+
+    <!--display: list-item-->
+    <div> 
+        <i>list</i>
+        <i>list</i>
+        <i>list</i>
+        <i>list</i>
+    </div>
+
+    <!--disply : table -->
+    <div class="services">
+        <div>
+           <div>Mobile1</div> 
+           <div>Mobile2</div> 
+        </div>
+        <div>
+            <div>Mobile3</div>
+            <div>Mobile4</div>
+        </div>
+        <div>Web Applicatin</div>
+        <div>Web Applicatin</div>
+    </div>
+</body>
+
+</html>
