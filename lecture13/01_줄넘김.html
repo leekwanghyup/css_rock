@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>white-space</title>
+<style>
+body{
+	font-family: '돋움',dotum,helvetica,sans-serif;
+    font-size: 12px;
+}
+
+.area{
+    width: 300px;
+    background-color: silver;
+    margin-bottom: 50px;
+}
+.nowrap{
+    white-space: nowrap; /*줄넘김 없음 */
+}
+
+.pre{
+    white-space: pre;/*  공백과 줄넘김이 모두 적용된다*/
+    height: 40px;
+}
+
+.pre-wrap{
+    white-space: pre-wrap; /* 공백과 줄넘김이 적용되면서 컨테이너 너비에 따라 적절히 줄바꿈한다.*/ 
+}
+
+.pre-line{
+    white-space: pre-line; /* pre-wrap과 동일하며 앞에 생긴 공백을 제거한다. */ 
+}
+
+</style>
+</head>
+<body>
+
+<p class="area nowrap">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, doloremque, provident tenetur reprehenderit blanditiis quaerat consequuntur dolores quas officiis quisquam!</p>
+<p class="area pre">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+	Totam, 
+	doloremque, 
+	provident tenetur reprehenderit blanditiis quaerat consequuntur dolores quas officiis quisquam!
+</p>
+<p class="area pre-wrap">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+	Totam, 
+	doloremque, 
+	provident tenetur reprehenderit blanditiis quaerat consequuntur dolores quas officiis quisquam!
+</p>
+<p class="area pre-line">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+	Totam, 
+	doloremque, 
+	provident tenetur reprehenderit blanditiis quaerat consequuntur dolores quas officiis quisquam!
+</p>
+
+</body>
+</html>
