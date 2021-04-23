@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>의사요소선택자</title>
+</head>
+<body>
+    <h1>선택자</h1>
+</body>
+<style>
+    h1:before{
+        content: 'before 삽입  ';/* 공백까지 삽입 */
+        color: red;
+    }
+    h1::after{
+        content: ' after 삽입';
+        color: rosybrown;
+    }
+</style>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>의사요소선택자</title>
+</head>
+<body>
+    <h1>선택자</h1>
+</body>
+<style>
+    h1:before{
+        content: '';/* 공백까지 삽입 */
+        display: inline-block; /* 이것을 하지 않으면 width,height가 적용되지않는다.  */
+        width: 15px; height: 15px;
+        background-color: red;
+        margin-right: 10px;
+    }
+    
+</style>
+</html>
