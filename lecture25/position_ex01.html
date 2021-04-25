@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{margin-top: 100px;}
+    .container {
+        background-color: yellow;
+        width: 500px; height: 300px;
+        margin: 0 auto;
+        position: relative;
+        /* 
+        absolute 포지션의 부모가 될 자격 
+        가까운 부모중에서  position의 속성이 static이 아닌 것 
+            - relative, absolute, fixed
+            - fiexed의 기준은 항상 body이다. 
+        */
+    }
+    .box{
+        height: 100px;
+        position: absolute;
+        top: 100px
+    }
+    .a{background-color: green; 
+        right: 100%;
+    }
+    .b{background-color: red; 
+        left: 200px;
+    }
+    .c{background-color: blue; 
+        left: 100%;
+    }
+    
+</style>
+<body>
+    <div class="container">
+        <div class="box a">Box aaaaaa</div>
+        <div class="box b">Box b</div>
+        <div class="box c">Box ccc</div>
+    </div>
+</body>
+</html>

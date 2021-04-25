@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias reprehenderit iusto doloremque eos nostrum recusandae dolorum totam illum maxime illo hic aliquid deleniti quia ratione distinctio culpa ducimus, corrupti molestiae.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore expedita ipsam ex est exercitationem asperiores amet? Harum eveniet voluptate nobis explicabo dicta ducimus, fuga vitae repudiandae reiciendis voluptates sint minima!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam quas, aperiam fugiat a, architecto culpa esse perspiciatis voluptas laudantium, nobis eius! Laborum sunt quae esse et soluta veritatis fugit pariatur!
+    </p>
+</body>
+<style>
+    *{margin: 0; padding: 0;}
+    
+    p {
+        border: 1px solid red;
+        width: 500px;height: 200px;
+        position: absolute;
+        /* left: 50%;top:50%;  */
+        
+        /* 실체를 움직여야함 */
+        /* margin-left: -250px;
+        margin-top: -100px;  */
+
+        left: calc(50% - 250px); /* 연산자와 피연산자 사이에 공백이 있어야 한다.*/
+        top: calc(50% - 100px);
+    }
+</style>
+</html>
