@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<ul class="portfolio">
+    <li>pic1</li>
+    <li>pic2</li>
+    <li>pic3</li>
+    <li>pic4</li>
+    <li>pic1</li>
+    <li>pic2</li>
+    <li>pic3</li>
+    <li>pic4</li>
+    <li>pic1</li>
+    <li>pic2</li>
+    <li>pic3</li>
+    <li>pic4</li>
+</ul>
+<style>
+* {margin:0; padding:0;}
+.portfolio {
+    width:960px; 
+    margin:100px auto; 
+    background:black; 
+    border:1px solid #ccc;
+}
+
+.portfolio li{
+    list-style:none;
+    background:green;
+    width:225px;
+    height:225px; 
+    margin-right: 20px;
+    float: left;
+}
+.portfolio li:nth-child(4n){
+    margin-right: 0;
+}
+
+.portfolio:after{
+    content: "";
+    clear: left;
+    display: block;
+}
+</style>
+</body>
+</html>
