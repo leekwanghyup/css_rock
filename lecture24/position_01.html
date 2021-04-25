@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box a">
+        <img src="http://placehold.it/100x100" alt="">
+    </div>
+    <div class="box b">
+        <img src="http://placehold.it/100x100" alt="">
+    </div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, doloribus officia suscipit sequi veniam ratione non quaerat sapiente quos veritatis distinctio placeat sunt ipsa id ab. Consequuntur veritatis est vitae?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto minus molestias, tempora, necessitatibus error ea laborum ab maiores perspiciatis saepe, veniam alias excepturi rerum magni maxime consectetur. Quibusdam, natus molestias!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, fugit porro? Modi praesentium quam excepturi at blanditiis quo mollitia accusamus dolorum debitis harum ab, facere possimus! Nulla placeat laudantium ex?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga deleniti molestiae commodi culpa ipsum sapiente doloremque tenetur magnam tempora. Corporis iure quia sed magnam vel enim ipsam rerum quidem voluptas.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non architecto iste temporibus, blanditiis aperiam officia vel quod? Aperiam tempora vitae explicabo excepturi ducimus consequuntur dignissimos facilis inventore quis, ea repudiandae?
+    </p>
+</body>
+<style>
+    *{margin: 0; padding: 0;}
+    img{vertical-align: top;}
+    .box{
+        border: 2px solid red;
+        position: absolute; 
+        /*
+            블록요소인데 컨텐츠만큼 크기가 잡힌다. 
+            다른 태그들이 position이 absolute인 태그를 인식하지 못한다.(유령화)
+            기준이 없으면 body가 부모가 된다. 
+        */
+    }
+    .a{
+        left: 130px; top: 130px;
+        background-color: red;
+        padding: 20px; 
+    
+    } 
+    .b { /*html에서 나중에 만들어진 요소가 더 위에 있다.  */
+        left:160px; top:160px; 
+        background-color: yellow;
+        padding: 20px;
+    }
+        
+        
+    
+    
+</style>
+</html>
