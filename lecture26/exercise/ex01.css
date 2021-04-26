@@ -1,0 +1,33 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+li{list-style: none;}
+
+nav { margin-left: 20px;}
+
+.menu { 
+    background-color: #333;
+    color: #fff;
+    height: 40px;
+}
+.menu > .menu-list { 
+    float: left;
+    margin: 0px 30px;
+    cursor: pointer;
+    line-height: 40px;
+}
+
+.menu::after {content: ""; clear: both; display: block;}
+
+.menu-2 {
+    display: none;
+    background-color: #666;
+}
+.menu-2 > li {
+    width: 150px;
+    text-align: center;
+}
+
+.menu > li:hover > .menu-2 {
+    display: block;
+    position: absolute;
+    margin-left: -30px;
+}

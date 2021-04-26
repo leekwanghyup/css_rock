@@ -1,0 +1,41 @@
+/* .answer{
+    background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/485050/positon_btn_final.png) no-repeat;
+   width:363px; height:197px;
+    float:left;
+    margin-right:20px;
+  }
+  
+  .lastest-news {
+    float:left;
+    border:2px solid #ccc;
+    width:350px;
+    height:145px;
+    margin-top:40px;
+  }
+  .read-more { 
+    line-height:30px; 
+    background:#000; 
+    padding:0 10px;
+    color:#fff;
+    text-decoration:none;  
+  } */
+
+  .lastest-news{
+      border: 1px solid #ccc;
+      width: 350px; height: 145px;
+      margin-top: 60px;
+      position: relative;
+  }
+
+  .read-more { 
+      color: #fff;
+      background-color: #000;
+      text-decoration: none;
+      padding: 0 10px;
+      line-height: 30px;
+      position: absolute;
+      right: 0; 
+      bottom: calc(100% + 10px);
+
+  }
+
