@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .photo img {
+        width: 100px;
+        /* 가로길이, 2초동안, 1초지연, 등속보다 느리게*/
+        /* transition-property: width;
+        transition-duration: 2s;
+        transition-delay: 1s; 
+        transition-timing-function: ease;  */
+        
+        transition: 
+            /* width 2s 1s ease, */
+            /* margin-left 2s 1s ease-in; */
+            /* all 2s 1s ease;  */
+            /* 속도모델 cubic bezier */
+            all 2s 1s cubic-bezier(.15,1.44,.84,-0.96)
+    }
+    .photo:hover img{
+        width: 400px;
+        margin-left: 100px;
+    }
+</style>   
+</head>
+<body>
+<div class="photo">
+    <img src="http://placehold.it/100x100" alt="tree">
+</div> 
+
+</body>
+</html>
