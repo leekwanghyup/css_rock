@@ -1,0 +1,45 @@
+*{margin:0; padding:0;}
+
+.mainmenu { /*1차 메뉴 */
+    background:#333;
+    padding-left:40px;
+}
+
+.mainmenu ul { /* 서브메뉴 */
+    background:#666; 
+    opacity: 0; 
+    position: absolute;
+    /* 서브메뉴는 공간을 차지하여선 안된다.  */
+
+    /* 트랜지션은 마우스를 올리기 전의 상태에 적어준다. */
+    transition: opacity 0.5s;
+
+    /* 2차 메뉴는 투명도를 0으로 했을 뿐 존재한다. 
+    보이지는 않지만 2차메뉴에 리스트에 해당하는 곳에 
+    마우스를 올려도 서브메뉴가 뜬다.
+    이것을 막기 위해 다음을 사용한다. */
+    pointer-events: none;
+}
+
+.mainmenu:after { /* 1차 메뉴 플롯 해지 */
+    content:'';
+    display:block;
+    clear:both; 
+}
+
+.mainmenu > li { /* 1차 메뉴 리스트  */
+    float:left; list-style:none;margin-right:30px; line-height:35px;color:#fff; 
+}
+
+/* 1차메뉴 리스트에 마우스를 올리면 서브메뉴가 나타나야함*/
+.mainmenu > li:hover > ul {
+    opacity: 1;
+}
+
+.mainmenu > li ul li { /* 서브메뉴 리스트 */
+    padding:0 10px; 
+    white-space:nowrap;
+    /* 마우스를 올렸을때 이벤트가 다시 살아나야 
+    서브메뉴가 없어지지 않는다. */
+    pointer-events: auto;
+}

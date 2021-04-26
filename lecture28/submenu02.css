@@ -1,0 +1,45 @@
+*{margin:0; padding:0;}
+
+.mainmenu { /*1차 메뉴 */
+    background:#333;
+    padding-left:40px;
+}
+
+.mainmenu ul { /* 서브메뉴 */
+    background:#666; 
+    /* opacity: 0; */
+    position: absolute;
+    top: -200px;
+    /* 메인메뉴를 덮으면서 내려오는 문제를 해결한다. */
+    z-index: -1; 
+}
+
+.mainmenu:after { /* 1차 메뉴 플롯 해지 */
+    content:'';
+    display:block;
+    clear:both; 
+}
+
+.mainmenu > li { /* 1차 메뉴 리스트  */
+    float:left; 
+    list-style:none;margin-right:30px;
+    line-height:35px;
+    color:#fff; 
+
+    /* 서브메뉴의 position 기준이 된다. */
+    position: relative;
+}
+
+/* 1차메뉴 리스트에 마우스를 올리면 서브메뉴가 나타나야함*/
+.mainmenu > li:hover > ul {
+    top: 100%;
+    transition: top 0.5s;
+}
+.mainmenu > li:hover{ /* 커서를 포인터 모양을 바꾼다. */
+    cursor: pointer;
+}
+
+.mainmenu > li ul li { /* 서브메뉴 리스트 */
+    padding:0 10px; 
+    white-space:nowrap;
+}
