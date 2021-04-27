@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radials</title>
+</head>
+<body>
+
+<h1>Gradient</h1>
+<h2>Raidal gradient</h2>
+<div class="radial first"></div>
+<div class="radial second"></div>
+<div class="radial third"></div>
+</body>
+<style>
+    .radial {
+        width: 300px; height: 300px;
+        border: 1px solid;
+        margin-bottom: 10px;
+    }
+    .first {
+        background: radial-gradient(ellipse at center, #000 0%, #fff 100%);
+    }
+    .second {
+        /*
+            직접 작성하기 보단 colorzilla를 이용하자. 
+            검색 : colorzilla gradient
+            https://www.colorzilla.com/gradient-editor/
+
+            
+        */
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,ffffff+50,000000+100 */
+        background: #000000; /* Old browsers */
+        background: -moz-linear-gradient(top,  #000000 0%, #ffffff 50%, #000000 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  #000000 0%,#ffffff 50%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  #000000 0%,#ffffff 50%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+    }
+
+    .third {
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e1ffff+0,e1ffff+7,e1ffff+12,fdffff+12,e6f8fd+30,c8eefb+54,bee4f8+75,b1d8f5+100;Blue+Pipe+%232 */
+        background: #e1ffff; /* Old browsers */
+        background: -moz-linear-gradient(-45deg,  #e1ffff 0%, #e1ffff 7%, #e1ffff 12%, #fdffff 12%, #e6f8fd 30%, #c8eefb 54%, #bee4f8 75%, #b1d8f5 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg,  #e1ffff 0%,#e1ffff 7%,#e1ffff 12%,#fdffff 12%,#e6f8fd 30%,#c8eefb 54%,#bee4f8 75%,#b1d8f5 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg,  #e1ffff 0%,#e1ffff 7%,#e1ffff 12%,#fdffff 12%,#e6f8fd 30%,#c8eefb 54%,#bee4f8 75%,#b1d8f5 100%); /* W3C : 표준코드 , IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1ffff', endColorstr='#b1d8f5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    }
+</style>
+</html>
