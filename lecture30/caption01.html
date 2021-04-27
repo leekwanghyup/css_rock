@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>
+            <img src="http://placehold.it/400x200" alt=""> <!--부모인 li를 기준으로 이미지를 띄운다.-->
+            <span>image title</span>
+        </li>
+        <li>
+            <img src="http://placehold.it/400x200"/>
+            <span>image title</span>
+        </li>
+    </ul>
+</body>
+<style>
+    li{list-style: none; width: 400px; height: 200px; border:1px solid red;position: relative;}
+    
+    li span { 
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background-color: rgba(0,0,0,0.7);
+        color: #fff;
+        text-align: center;
+        line-height: 200px;
+        opacity: 0;
+        transition: all 0.5s; /* all 생략가능 */
+    }
+    li:hover span{
+        opacity: 1;
+    }
+</style>
+</html>
+
+
