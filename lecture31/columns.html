@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>columns 기초</title>
+</head>
+<style>
+    .area {
+    
+        /* -o-column-count: 2; 오페라 */
+        /* -moz-column-count: 2; 파이어 폭스 */
+        /* -webkit-column-count: 2; 크롬, 사파리, 안드로이드 ... */
+        /* -ms-column-count:2; IE: 현재는 사용하지 않음 */
+        /* column-count: 2; */
+        
+        /* 컬럼 경계선 */
+        column-rule: 2px dotted red;
+        /* column-width: 200px;  */
+        columns: 200px 3;
+    }
+    .area h1{
+        /* 한블록을 다 차지한다. */
+        column-span: all; 
+    }
+</style>
+<body>
+<div class="area">
+    <h1>multiple colums</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro autem earum accusamus ullam, dicta harum exercitationem omnis quia rem voluptates voluptatibus nisi? Dolorum saepe consequuntur eos enim, similique iste ducimus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus temporibus aut, quaerat pariatur corrupti quas repellat necessitatibus ut sint cumque magni, non libero. Necessitatibus hic, eligendi dolorem nemo aliquid modi?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, illo atque deleniti magni ad doloremque. Quas laboriosam ipsa magnam eius ipsam eum corrupti, rerum labore accusamus facilis perspiciatis quae asperiores?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus rerum sint dolorum ad vitae, vel officia aut provident, quisquam id odit! Deleniti error mollitia qui possimus saepe, porro reiciendis nobis!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati est libero voluptatibus, amet soluta nisi quos unde voluptate corrupti, eius possimus voluptates iusto similique? Asperiores corporis tenetur facere magnam aperiam.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, laborum soluta iure dolor similique, commodi autem reprehenderit ut quo fuga optio incidunt eius placeat! Reiciendis ex ullam expedita cum quaerat?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis pariatur voluptatum nam ex. Voluptas inventore et fugiat suscipit quisquam labore libero odio voluptate, accusamus modi vero excepturi, ut sapiente. Ipsam?
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt expedita commodi ullam alias quidem dolor, iure sequi fugiat inventore nisi! Natus quibusdam officiis minus cupiditate consequuntur odit laborum voluptatibus quasi!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit vel et fuga eveniet autem voluptatem quasi, quidem dolorem praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ratione architecto, optio sed, ad eos et cum ea magni aut sint fugiat corporis tempore, a eum molestiae iusto accusamus perspiciatis.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quas vitae nulla, quod maxime officiis alias tempore. Eum nisi quibusdam numquam minima unde! Saepe obcaecati illo modi pariatur! Quisquam, beatae!Loremlo
+        </Cum>
+    </p>
+</div>    
+</body>
+</html>
