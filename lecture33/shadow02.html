@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .portfolio{
+        border: 1px solid;
+    }
+    .portfolio li { position: relative; float: left;margin-left: 20px;list-style: none;}
+    .hover_content{
+        position: absolute; left: 0; right: 0; bottom: 0; top:0;
+        background: rgba(0, 0, 0, .7);
+        color: #fff; text-align: center; padding-top: 50px ;
+        opacity: 0;
+    }
+
+    .portfolio li:hover .hover_content{
+        opacity: 1;
+    }
+
+</style>
+<body>
+    <ul class="portfolio">
+        <li>
+            <img src="http://placehold.it/200x200" alt="dummy"/>
+            <div class="hover_content"> <!--이미지가 li와 겹쳐있어야한다. -->
+                <h2>image title</h2>
+                <p>image description</p>
+                <a href="#">더보기</a>
+            </div>
+        </li>
+        <li>
+            <img src="http://placehold.it/200x200" alt="dummy"/>
+            <div class="hover_content">
+                <h2>image title</h2>
+                <p>image description</p>
+                <a href="#">더보기</a>
+            </div>
+        </li>
+        <li>
+            <img src="http://placehold.it/200x200" alt="dummy"/>
+            <div class="hover_content">
+                <h2>image title</h2>
+                <p>image description</p>
+                <a href="#">더보기</a>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>
