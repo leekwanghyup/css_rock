@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=얖, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="photo"></div>
+</body>
+<style>
+    .body{font-size: 12px;}
+    .photo{
+        width: 100px; height: 100px;
+        background-color: red;
+        /*
+        animation-name: change_color ;
+        animation-delay: 0.1s;
+        animation-duration: 2s; 
+        animation-iteration-count: 4;
+        animation-timing-function: ease;
+        */
+        
+        /*다음의 설정이 없으면 애니메션이 끝나면 처음상태로 돌아온다.*/
+        /* animation-fill-mode: forwards;
+        animation-direction: alternate; */
+        animation: change_color 2s ease 0.1s infinite alternate forwards;
+        
+    }
+    @keyframes change_color { /* 정의된 애니메션이 하는 일 */
+        /*from { background-color: red;}
+        to {background-color:  blue;}*/
+        0% {background-color: red;}
+        25% {background-color: green; margin: 0 0 0 200px;}
+        50% {background-color: yellow; margin: 200px 0 0 200px;}
+        75% {background-color: silver; margin: 200px 0 0 0px;}
+        100% {background-color: blue; margin: 0;}
+
+    }
+</style>
+</html>
