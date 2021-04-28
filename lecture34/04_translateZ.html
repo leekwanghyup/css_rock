@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <img src="http://placehold.it/300x200" alt="">
+        <span>dummy text</span>
+    </div>
+</body>
+</html>
+<style>
+    /* 이미지를 중심 축으로 Z축의 위치 변경 */
+    div img{
+        transition: all 0.8s;
+        transform:perspective(1000px) translateZ(0);
+    }
+
+    div:hover img{
+        /*positive degree : 확대 nagative degree : 축소  */
+        transform: perspective(1000px) translateZ(-100px);
+    }
+</style>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+</head>
+<body>
+    <div>
+        <img class="img1" src="http://placehold.it/300x200" alt="">
+        <span>dummy text</span>
+    </div>
+    <div>
+        <img class="img2" src="http://placehold.it/300x200" alt="">
+        <span>dummy text</span>
+    </div>
+</body>
+</html>
+<!-- transform은 태그의 본래의 위치를 유지한다. -->
+<style>
+    div img{
+        -o-transition: all 0.4s;
+        -webkit-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        -ms-transition: all 0.4s;
+        transition: all 0.5s;
+    }
+
+    div:hover .img1{ /* 인접형제태그가 이 요소의 움직을 안다. span태그 뒤로 밀려남*/
+        margin-left: 100px;
+    }
+    div:hover .img2{ /* 인접형제태그가 이 요소의 움직을 알지 못한다. span태그의 위치가 변하지 않는다. */
+        -o-transform: translate(200px, 100px); 
+        -webkit-transform: translate(200px, 100px); 
+        -moz-transform: translate(200px, 100px); 
+        -ms-transform: translate(200px, 100px); 
+        transform: translateX(200px) translateY(100px);   
+    }
+</style>

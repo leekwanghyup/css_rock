@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="first-div">
+        <img class="first" src="http://placehold.it/400x200" alt="">
+        <span>photo description</span>
+    </div>    
+    <div class="first-div">
+        <img class="second" src="http://placehold.it/400x200" alt="">
+        <span>photo description</span>
+    </div>   
+    <div class="first-div">
+        <img class="third" src="http://placehold.it/400x200" alt="">
+        <span>photo description</span>
+    </div>  
+    <div class="first-div">
+        <img class="fourth" src="http://placehold.it/400x200" alt="">
+        <span>photo description</span>
+    </div>        
+</body>
+</html>
+<style>
+div{
+    perspective: 1000px;
+}
+
+div img {
+    margin-left: 100px ;
+    transition:  all 0.4s;
+    transform-origin: 50% 50%; /* 회전의 기준점 */
+}
+
+/* 3차원 y축 기준 회전 */
+div:hover .first { 
+    /* 양수 회전방향 : top */
+    transform: rotateX(45deg); 
+}
+
+/* 3차원 x축 기준 회전 */
+div:hover .second {
+    /* 양수 회전방향 : 반시계방향 */
+    transform: rotateY(45deg); 
+}
+
+/* 3차원 z축 기준 회전 */
+div:hover .third {
+    transform: rotateZ(45deg); 
+}
+div:hover .fourth {
+    transform: rotate3d(1,1,1, 30deg) ;
+}
+</style>

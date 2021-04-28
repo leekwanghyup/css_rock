@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="first-div">
+        <img class="first" src="http://placehold.it/400x200" alt="">
+        <span>photo description</span>
+    </div>    
+</body>
+<!-- 이미지 자체에 원근감 설정 -->
+<style>
+div img {
+    margin-left: 100px ;
+    transition:  all 0.4s;
+    transform: perspective(500px) rotateX(0deg) rotateY(0deg); 
+}
+div:hover img {
+    transform: perspective(500px) rotateX(45deg) rotateY(11deg);
+}
+</style>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div class="first-div">
+    <img class="first" src="http://placehold.it/400x200"/>
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae ipsam ea sequi rem amet eos explicabo saepe? Culpa ipsum voluptate aliquam eius quam error harum adipisci, omnis at, quisquam iusto!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eum architecto totam, atque harum cumque accusantium ex laboriosam. Nihil sint voluptates fuga deleniti. Impedit repellat, deleniti maxime doloribus eligendi quisquam.
+    </p>
+</div>
+<div class="first-div">
+    <img class="first" src="http://placehold.it/400x200"/>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae ipsam ea sequi rem amet eos explicabo saepe? Culpa ipsum voluptate aliquam eius quam error harum adipisci, omnis at, quisquam iusto!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus atque dolorem similique. Saepe non quam quibusdam reiciendis maiores consectetur laboriosam iste quidem distinctio, sequi officia officiis amet consequuntur. Dolorem, nulla.
+    </p>
+</div>    
+</body>
+</html>
+<!--rotate 활용  -->
+<style>
+.first-div{perspective: 1000px;}
+.first-div > img, p {
+    float: left;
+}
+.first-div::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+img{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+img:hover{
+    transition: all .5s;
+    transform: rotateY(60deg);
+}
+
+p {
+    transition: opacity 1.0s;
+    width: 400px;
+    opacity: 0;
+}
+
+img:hover + p {
+    opacity: 1;
+    transform: translate(-70px);
+}
+
+
+</style>
