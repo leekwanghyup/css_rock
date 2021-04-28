@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="loading">LOADING
+            <span class="dot_one">.</span>
+            <span class="dot_two">.</span>
+            <span class="dot_three">.</span>
+        </h1>
+        <div class="bouncing_ball">
+            <div class="ball"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
+<style>
+    .dot_one {
+        /* animation-name: dot_one;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite; */
+        animation:dot_one 1.5s infinite
+    }
+    .dot_two {
+        animation:dot_two 1.5s infinite
+    }
+
+    .dot_three {
+        animation:dot_three 1.5s infinite
+    }
+
+    @keyframes dot_one{
+        0%{ opacity: 0;}
+        15%{ opacity: 0;}
+        30% { opacity: 1;}
+        100% {opacity: 1;}
+    }
+
+
+    @keyframes dot_two{
+        0%{ opacity: 0;}
+        35%{ opacity: 0;}
+        50% { opacity: 1;}
+        100% {opacity: 1;}
+    }
+
+    @keyframes dot_three{
+        0%{ opacity: 0;}
+        55%{ opacity: 0;}
+        70% { opacity: 1;}
+        100% {opacity: 1;}
+    }
+
+    
+    .bouncing_ball{
+        position: relative;
+        border: 1px solid;
+        width: 4rem; height: 12rem;
+        margin : 0 auto;
+    }
+    .ball{
+        position: absolute;
+        background-color: blue;
+        width: 4rem; height: 4rem;
+        border-radius: 50%;
+        /* top: calc(100% - 4rem) ; */
+        top:0;
+        
+        animation:ball_bounce 1s infinite
+    }
+    @keyframes ball_bounce {
+        0% { top:0; animation-timing-function: ease-in;}
+        50% {top: calc(100% - 4rem)}
+        100% {top:0}
+    }
+
+    
+</style>
