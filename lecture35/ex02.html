@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스케일을 이용한 캡션</title>
+</head>
+<body>
+<!-- 마우스 올렸을때만 이미지위에 검은색-투명도 80%의 배경에 흰색의 타이틀이 가운데 오도록 css를 작성하세요, 올렸을때 가운데에서  부터 전체로 커지도록 작성합니다.전환 시간은 0.5s-->
+
+<ul>
+    <li>
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/485050/sample2.jpg">
+      <span>image title</span>
+    </li>
+  </ul>    
+</body>
+</html>
+<style>
+li{
+    list-style:none; width:400px;  position: relative; 
+}
+
+li span {
+  position: absolute;
+  top:0; bottom: 0; left: 0; right: 0;
+  background-color: rgba(0, 0, 0, .5);
+  color: #fff; text-align: center;
+  line-height: 286px;
+  transition: all 0.5s;
+
+  transform-origin: 0 0; /* 기준점 */
+  transform: scale(0);
+  
+}
+li:hover span{
+  transform: scale(1);
+}
+</style>
