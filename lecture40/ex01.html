@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div class="wrap">
+    <div>box1</div>
+    <div>box2</div>  
+    <div>box3</div>
+</div>
+</body>
+</html>
+<style>
+    .wrap {
+        display: flex;
+        flex-direction: row-reverse;
+        height: 500px;
+        margin: 20px auto;
+    }
+    .wrap div:first-child{
+        background-color: red;
+    }
+    .wrap div:nth-child(2){
+        background-color: blue;
+    }
+    .wrap div:last-child{
+        background-color: yellow;
+    }
+</style>
