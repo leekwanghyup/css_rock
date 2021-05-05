@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div class="wrapper gradientbg">
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolore deleniti consectetur qui? Vel accusantium, impedit totam consequuntur, reprehenderit esse dicta deserunt inventore repellendus magni ad sapiente rerum enim nihil!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium omnis voluptatibus temporibus blanditiis suscipit eius iusto optio ratione ipsum ipsam! Dignissimos hic nihil consectetur quidem vel repellendus consequuntur ipsam architecto.</p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, accusantium consequuntur, molestiae inventore, at beatae voluptatum facilis a sed est sapiente libero eius voluptatem minima blanditiis aliquam qui omnis voluptatibus?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, accusantium consequuntur, molestiae inventore, at beatae voluptatum facilis a sed est sapiente libero eius voluptatem minima blanditiis aliquam qui omnis voluptatibus?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, accusantium consequuntur, molestiae inventore, at beatae voluptatum facilis a sed est sapiente libero eius voluptatem minima blanditiis aliquam qui omnis voluptatibus?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, accusantium consequuntur, molestiae inventore, at beatae voluptatum facilis a sed est sapiente libero eius voluptatem minima blanditiis aliquam qui omnis voluptatibus?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, accusantium consequuntur, molestiae inventore, at beatae voluptatum facilis a sed est sapiente libero eius voluptatem minima blanditiis aliquam qui omnis voluptatibus?
+        </p>
+
+    </main>
+        <aside class="sidebar left">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima aliquid accusamus possimus maxime deleniti cupiditate obcaecati, expedita natus voluptatum minus eligendi voluptatem reiciendis. Quaerat voluptas eaque voluptatem, delectus exercitationem facilis!</p>
+        </aside>
+        <aside class="sidebar right">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eveniet quae quam laudantium ipsam enim nesciunt, voluptas architecto quia officiis inventore eaque a nulla temporibus unde numquam nemo voluptates cumque!</p>
+        </aside>
+</div>
+</body>
+</html>
+<style>
+* {box-sizing: border-box;}
+.wrapper {
+    border: 1px solid ;
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+}    
+
+.wrapper main {
+    padding: 15px;
+    flex: 2; order: 2;
+    background: #f1f1f1;
+}
+.sidebar {padding: 0 20px; ;}
+.left {
+    flex: 1;order: 1;
+}
+
+.right {
+    flex: 1;order:3
+}
+
+@media screen and (max-width:860px) {
+    .wrapper { width: 100%;} 
+}
+
+@media screen and (max-width:600px) {
+    .wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .wrapper main{order: 1; width: 100%;}
+    .left { order: 2; width: 50%;}
+    .right { order: 3; width: 50%;}
+
+}
+</style>
