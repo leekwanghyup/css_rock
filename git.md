@@ -3,12 +3,12 @@ git config --global user.name
 git config --global user.email
 
 ## 유저 설정 
-git config --global user.name "leekwanghyup"
-git config --global user.email "leekwanghyup@naver.com"
+git config --global user.name "leekwanghyup" <br>
+git config --global user.email "leekwanghyup@naver.com" <br>
 
 ## 로그인 정보 없애기 
-git config --global credential.helper manager
-git credential-manager delete https://github.com
+git config --global credential.helper manager <br>
+git credential-manager delete https://github.com <br>
 
 ## 로컬 저장소 설정 
 - 프로젝트 폴더로 이동하여 다음 명령어 입력 
